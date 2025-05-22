@@ -14,6 +14,23 @@ A tesztképeket egy szkript állítja elő, amiben a megjelenő körök minden p
 Mivel a CPU alapú feldolgozás jelentős számításigénnyel rendelkezik, ezt elsősorban a Radon-transzformáció működésének vizualizálására és tesztelésére alkalmas. A GPU alapú megoldás, a Numba CUDA alkalmazásával, jelentősen kihasználja a párhuzamos számítás előnyeit, ami nagymértékben lerövidíti a futásidőt.
 
 
+## Futtatási követelmények
+
+Python verzió
+
+    Python 3.12.5
+    
+
+A projekt futtatásához a következő szoftverkörnyezet és csomagok szükségesek:
+
+    numpy: mátrix és tömbkezelés
+    numba + numba.cuda: GPU-s megvalósítások
+    matplotlib: képek megjelenítése
+    tifffile: .tif képek mentése
+    Pillow (PIL): képek beolvasása
+    tomopy: tesztelés és rekonstrukciós algoritmus (gridrec)
+
+
 ## Mappaszerkezet
 
 ```bash
